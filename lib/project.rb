@@ -7,7 +7,7 @@ class Project
   end
   def add_backer(backer)
     @backers.push(backer)
-     self.backers.include?(backer)? nil : backer.back_project(self)
+    backer.back_project(self) unless self.backers.include?(backer)? 
    end
   def backers
     @backers
