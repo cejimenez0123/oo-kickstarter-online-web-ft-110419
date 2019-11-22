@@ -9,8 +9,5 @@ class Project
     @backers.push(backer)
     Backer.back_project(self)
   end
-  def backers
-    @backers
-  end
 
 end
